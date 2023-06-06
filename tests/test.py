@@ -1,6 +1,7 @@
 import requests
 from config import Config
 
+#Лайк за тесты. У меня их, к примеру, нет. Совсем...
 def test_hello_world():
     response = requests.get(f"{Config.BASE_URL}/")
     assert response.text == "<p>Hello, DIT!</p>"
